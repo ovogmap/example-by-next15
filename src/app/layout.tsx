@@ -16,8 +16,8 @@ const navList = [
     href: "/nested-layout/nested-page",
   },
   {
-    name: "Contact",
-    href: "/contact",
+    name: "error-handling",
+    href: "/error-handling",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className="w-screen h-screen">
         <section className="flex flex-row w-full h-full ">
           <nav className="w-[200px] border-r border-r-gray-300 h-full p-[12px]">
