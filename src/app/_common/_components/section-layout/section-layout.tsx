@@ -1,4 +1,4 @@
-import Title from "../title";
+import Title from "../title/title";
 import { container } from "./section-layout.styles.css";
 
 export default function SectionLayout({

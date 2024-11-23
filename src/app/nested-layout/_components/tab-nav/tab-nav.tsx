@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
+import { UlStyle } from "./tab-nav.css";
 
 const navList = [
   {
@@ -15,7 +16,7 @@ const navList = [
   },
 ];
 
-export default function Nav() {
+export default function TabNav() {
   const segment = useSelectedLayoutSegment();
   const selectedColor = (currentSegment: string) => {
     return segment === currentSegment
@@ -24,7 +25,7 @@ export default function Nav() {
   };
   return (
     <nav>
-      <ul className="flex flex-row gap-[8px]">
+      <ul className={UlStyle}>
         {navList.map((nav) => (
           <li key={nav.href}>
             <Link href={nav.href} className={`${selectedColor(nav.segment)}`}>
