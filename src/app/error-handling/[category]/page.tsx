@@ -1,5 +1,5 @@
 import Text from "@/app/_components/text/text";
-import ErrorButton from "./_components/error-button/error-button";
+import ErrorButton from "../_components/error-button/error-button";
 
 export default function Page() {
   return (

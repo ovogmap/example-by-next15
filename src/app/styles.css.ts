@@ -13,6 +13,8 @@ export const RootSection = style({
 });
 
 export const RootMain = style({
+  display: "flex",
+  flexDirection: "column",
   width: "100%",
   height: "100%",
   padding: "30px",

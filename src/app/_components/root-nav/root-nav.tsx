@@ -10,7 +10,7 @@ const navList = [
   },
   {
     name: "nested-layout",
-    href: "/nested-layout/nested-page",
+    href: "/nested-layout",
   },
   {
     name: "error-handling",
@@ -19,6 +19,7 @@ const navList = [
 ];
 
 export default function RootNav() {
+  // const currnetSegment = useSelectedLayoutSegment();
   return (
     <nav className={NavStlye}>
       <ul className={UlStlye}>
