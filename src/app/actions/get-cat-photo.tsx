@@ -11,7 +11,6 @@ interface CatPhotoResponse {
 export async function getCatPhoto(): Promise<CatPhotoResponse> {
   const response = await fetch(`${BASE_URL}/cat?json=true`);
   const data = (await response.json()) as CatPhotoResponse;
-  console.log("data,", data);
   if (!response.ok) {
     return {
       url: undefined,

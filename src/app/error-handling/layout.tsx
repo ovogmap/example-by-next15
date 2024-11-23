@@ -1,4 +1,4 @@
-import SectionLayout from "../_common/_components/section-layout";
+import SectionLayout from "../_common/_components/section-layout/section-layout";
 
 export default function ErrorHandlingLayout({
   children,

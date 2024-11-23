@@ -1,5 +1,5 @@
 import Callout from "../_common/_components/callout";
-import SectionLayout from "../_common/_components/section-layout";
+import SectionLayout from "../_common/_components/section-layout/section-layout";
 import Nav from "./_components/nav";
 
 export default function NestedLayout({

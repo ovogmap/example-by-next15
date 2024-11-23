@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+"use client";
 import Link from "next/link";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "Next.js Example App",
-};
 
 const navList = [
   {

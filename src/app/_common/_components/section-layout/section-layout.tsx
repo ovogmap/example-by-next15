@@ -1,4 +1,5 @@
-import Title from "./title";
+import Title from "../title";
+import { container } from "./section-layout.styles.css";
 
 export default function SectionLayout({
   children,
@@ -8,7 +9,7 @@ export default function SectionLayout({
   title: string;
 }>) {
   return (
-    <section className="flex flex-col gap-[20px]">
+    <section className={container}>
       <Title>{title}</Title>
       {children}
     </section>

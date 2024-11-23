@@ -13,7 +13,6 @@ export default function CatImageForm() {
     getCatPhoto,
     initialState
   );
-  console.log("state,", state);
   return (
     <>
       <form action={formAction}>
