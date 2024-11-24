@@ -1,4 +1,10 @@
-import { style } from "@vanilla-extract/css";
+import { keyframes, style } from "@vanilla-extract/css";
+
+const borderColorChange = keyframes({
+  "0%": { borderColor: "#00000033" },
+  "50%": { borderColor: "red" },
+  "100%": { borderColor: "#00000033" },
+});
 
 export const Container = style({
   display: "flex",
@@ -6,9 +12,10 @@ export const Container = style({
   gap: "20px",
   width: "100%",
   borderRadius: "6px",
-  border: "1px dashed #00000033",
-  padding: "20px",
+  padding: "26px 20px",
   position: "relative",
+  border: "1px dashed #00000033",
+  animation: `${borderColorChange} 0.5s linear 1 forwards`,
 });
 
 export const ChildrenTag = style({

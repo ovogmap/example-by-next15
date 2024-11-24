@@ -12,7 +12,6 @@ export default function TabNav({
   const selectedColor = (currentSegment: string) => {
     return segment === currentSegment;
   };
-  console.log("segment", segment);
   return (
     <nav>
       <ul className={UlStyle}>
