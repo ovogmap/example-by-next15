@@ -1,4 +1,4 @@
-import ChildrenLayout from "../_components/cildren-layout/children-layout";
+"use client";
 import SectionLayout from "../_components/section-layout/section-layout";
 import TabNav from "../_components/tab-nav/tab-nav";
 
@@ -33,7 +33,7 @@ export default function ErrorHandlingLayout({
           },
         ]}
       />
-      <ChildrenLayout>{children}</ChildrenLayout>
+      {children}
     </SectionLayout>
   );
 }

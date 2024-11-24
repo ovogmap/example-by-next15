@@ -13,5 +13,3 @@ export const ErrorButtonStyles = style({
     background: "#db2777",
   },
 });
-
-//#71717a

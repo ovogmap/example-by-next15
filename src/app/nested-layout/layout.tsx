@@ -1,5 +1,4 @@
 import Callout from "../_components/callout/callout";
-import ChildrenLayout from "../_components/cildren-layout/children-layout";
 import SectionLayout from "../_components/section-layout/section-layout";
 import TabNav from "../_components/tab-nav/tab-nav";
 
@@ -35,7 +34,7 @@ export default function NestedLayout({
         ]}
       />
       <Callout>레이아웃을 사용해 공통 UI를 사용 할 수 있어요</Callout>
-      <ChildrenLayout>{children}</ChildrenLayout>
+      {children}
     </SectionLayout>
   );
 }

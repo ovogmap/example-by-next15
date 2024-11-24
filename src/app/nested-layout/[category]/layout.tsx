@@ -1,4 +1,5 @@
 "use client";
+import ChildrenLayout from "@/app/_components/cildren-layout/children-layout";
 import TabNav from "@/app/_components/tab-nav/tab-nav";
 import { useParams } from "next/navigation";
 
@@ -9,7 +10,7 @@ export default function Layout({
   const { category } = params;
   console.log("params,", params);
   return (
-    <section>
+    <ChildrenLayout>
       <TabNav
         navList={[
           {
@@ -34,7 +35,7 @@ export default function Layout({
           },
         ]}
       />
-      <div style={{ marginTop: "30px" }}>{children}</div>
-    </section>
+      {children}
+    </ChildrenLayout>
   );
 }
