@@ -16,6 +16,10 @@ const navList = [
     name: "error-handling",
     href: "/error-handling",
   },
+  {
+    name: "parallel-routes",
+    href: "/parallel-routes",
+  },
 ];
 
 export default function RootNav() {
